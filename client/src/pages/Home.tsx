@@ -260,12 +260,14 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 className="bg-[#FF6B6B] hover:bg-[#E55555] text-white font-medium py-6 px-8 rounded-lg transition-all duration-200 transform hover:scale-105"
+                onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View My Work
               </Button>
               <Button 
                 variant="outline" 
                 className="border-2 border-gray-300 hover:border-[#FF6B6B] text-gray-900 font-medium py-6 px-8 rounded-lg transition-colors"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Get in Touch
               </Button>
